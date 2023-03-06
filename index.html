@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <h1>Password Generator</h1>
+    <div class="main-container">
+        <input type="text" class="password-for" id="passwordFor" placeholder=" Enter What The Password Is For ">
+        <input class="generator-box" id="generatorBox" placeholder="Click button below to generate">
+
+        <div class="filter-container">
+            <label class="keyBox" for="keyFilter">Choose Characters
+                <select name="keyFilter" id="keyFilter">
+                    <option value="allKeys">All Keys</option>
+                    <option value="lowercase">Lowercase</option>
+                    <option value="uppercase">Uppercase</option>
+                    <option value="lettersOnly">LettersOnly</option>
+                </select>
+            </label>
+            <label class="numBox" for="numFilter">Choose # of Characters
+                <select name="numFilter" id="numFilter">
+                    <option value="20">20</option>
+                    <option value="16">16</option>
+                    <option value="12">12</option>
+                    <option value="8">8</option>
+                </select>
+            </label>
+
+        </div>
+        <button type="button" id="generateButton" class="generate-button" onclick="generatePassword()">Generate
+            Password!</button>
+        <button type="button" id="storeButton" class="store-button" onclick="formatPassword()">Format
+            Username/Password</button>
+
+        <div class="password-log" id="passwordLog"></div>
+    </div>
+
+</html>
+</body>
