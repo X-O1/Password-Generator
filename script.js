@@ -1,4 +1,4 @@
-//Front-end Elements
+//Front-End Elements
 const passwordFor = document.getElementById("passwordFor");
 const storeButton = document.getElementById("storeButton");
 const passwordLog = document.getElementById("passwordLog");
